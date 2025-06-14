@@ -25,7 +25,10 @@ You can download it manually from Kaggle at the following link:
 🔗 [CBCT Liver and Liver Tumor Segmentation Test Data (Kaggle)](https://www.kaggle.com/datasets/maximiliantschuchnig/cbct-liver-and-liver-tumor-segmentation-test-data)
 
 ## Dataset Pre-processing
-To convert 3D CBCT/CT volumes (`.nii`) into 2D images for training, run the data_preprocessing.py  
+To convert 3D CBCT/CT volumes (`.nii`) into 2D images for training, run the data_preprocess.py  
+```bash
+python data_preprocess.py
+```
 📌 Note: Replace input_dir and output_dir with the actual paths where your CBCT/CT data is stored and where you want the 2D images to be saved.
 
 ## Dataset Structure
@@ -54,7 +57,24 @@ To see more intermediate results, check out `./checkpoints/maps_cyclegan/web/ind
 python test.py --dataroot ./datasets/cbct_ct --name maps_cyclegan --model cycle_gan
 ```
 - The test results will be saved to a html file here: `./results/maps_cyclegan/latest_test/index.html`.
+  
+## Evaluation Metrics
+To evaluate the quality of the generated CT images, we provide a script `metric.py` to compute standard image similarity metrics including:
 
+- **PSNR** (Peak Signal-to-Noise Ratio)
+- **SSIM** (Structural Similarity Index)
+- **MAE** (Mean Absolute Error)
+- **RMSE** (Root Mean Squared Error)
+
+### Usage
+
+Run the evaluation script after inference:
+
+```bash
+python metric.py
+```
+📌 Note:
+Before running, make sure to update the image_dir path in metric.py to point to your result folder
 
 ## More Information
 
