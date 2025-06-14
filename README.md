@@ -18,12 +18,12 @@ Replace input_dir and output_dir with the actual paths where your CBCT/CT data i
 After preprocessing, the CBCT and CT data are organized into a folder structure compatible with CycleGAN training:
 ```
 simple_cbct_ct_32/
-├── trainA/ # CBCT training images
-├── trainB/ # CT training images
-├── valA/ # CBCT validation images
-├── valB/ # CT validation images
-├── testA/ # CBCT test images
-└── testB/ # CT test images
+├── trainA/   # CBCT training images
+├── trainB/   # CT training images
+├── valA/     # CBCT validation images
+├── valB/     # CT validation images
+├── testA/    # CBCT test images
+└── testB/    # CT test images
 ```
 📌 Note:
 All images are 2D grayscale .jpg slices. 
