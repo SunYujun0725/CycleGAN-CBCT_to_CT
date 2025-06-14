@@ -56,3 +56,10 @@ python test.py --dataroot ./datasets/cbct_ct --name maps_cyclegan --model cycle_
 - The test results will be saved to a html file here: `./results/maps_cyclegan/latest_test/index.html`.
 
 
+## More Information
+
+This project is based on the official [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) implementation.  
+For more details about the model architecture, training options, and additional features (e.g., image pools, identity loss, etc.), please refer to the original repository:
+👉 https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+
+
