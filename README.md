@@ -66,10 +66,8 @@ To evaluate the quality of the generated CT images, we provide a script `metric.
 - **MAE** (Mean Absolute Error)
 - **RMSE** (Root Mean Squared Error)
 
-### Usage
-
+Usage:  
 Run the evaluation script after inference:
-
 ```bash
 python metric.py
 ```
