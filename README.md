@@ -2,6 +2,21 @@
 This project uses a CycleGAN-based architecture to perform unpaired image-to-image translation from Cone Beam CT (CBCT) images to standard CT images.  
 It is designed for medical image preprocessing and domain adaptation in radiotherapy.  
 
+## Installation
+
+- Clone this repo:
+```bash
+git clone https://github.com/SunYujun0725/CycleGAN-CBCT_to_CT
+cd CycleGAN-CBCT_to_CT
+```
+
+- Install [PyTorch](http://pytorch.org) and 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
+  - For pip users, please type the command `pip install -r requirements.txt`.
+  - For Conda users, you can create a new Conda environment using `conda env create -f environment.yml`.
+  - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
+  - For Repl users, please click [![Run on Repl.it](https://repl.it/badge/github/junyanz/pytorch-CycleGAN-and-pix2pix)](https://repl.it/github/junyanz/pytorch-CycleGAN-and-pix2pix).
+
+
 ## Download Dataset
 This project uses the CBCT Liver and Liver Tumor Segmentation Train/Test Data dataset available on Kaggle.  
 You can download it manually from Kaggle at the following link:
